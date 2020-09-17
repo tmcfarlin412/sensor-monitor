@@ -8,9 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class ViewSensorPiezo extends StatefulWidget {
-  ViewSensorPiezo({this.app});
-
-  final FirebaseApp app;
+  ViewSensorPiezo();
 
   @override
   _ViewSensorPiezoState createState() => _ViewSensorPiezoState();
@@ -25,7 +23,7 @@ class _ViewSensorPiezoState extends State<ViewSensorPiezo> {
   }
 
   void getData() async {
-    final FirebaseDatabase database = FirebaseDatabase(); //app: widget.app);
+    final FirebaseDatabase database = FirebaseDatabase();
     DatabaseReference ref = database.reference();
     database
         .reference()
